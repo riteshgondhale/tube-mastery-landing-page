@@ -1,107 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 20px;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+header h1 {
+  font-size: 2rem;
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+.cta-btn {
+  background: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
 }
 
-.cta-button {
-    background-color: #ff4500;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: transform 0.3s ease;
+.cta-btn:hover {
+  transform: scale(1.1);
 }
 
-.cta-button:hover {
-    background-color: #e03e00;
-    transform: scale(1.1);
-}
-
-.timer {
-    background-color: #ffeb3b;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5em;
-}
-
-#countdown {
-    font-size: 2em;
-    font-weight: bold;
+.timer-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: yellow;
 }
 
 section {
-    padding: 50px 20px;
-    text-align: center;
+  padding: 20px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+section h2 {
+  text-align: center;
+  color: #007bff;
 }
 
-ul, ol {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.2em;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 li {
-    margin: 10px 0;
-    position: relative;
-    padding-left: 30px;
+  margin: 10px 0;
+  font-size: 1.1rem;
 }
 
-li:before {
-    content: '➔';
-    position: absolute;
-    left: 0;
-    color: #007bff;
-    font-size: 1.5em;
+.steps {
+  display: flex;
+  justify-content: space-around;
 }
 
-ol li:before {
-    content: counter(step-counter);
-    counter-increment: step-counter;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-    position: absolute;
-    left: 0;
-    font-size: 1em;
+.step {
+  text-align: center;
 }
 
-.testimonial, .faq {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 209
+.circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ff4500;
+  color: white;
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #343a40;
+  color: white;
+}
+
+footer a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
