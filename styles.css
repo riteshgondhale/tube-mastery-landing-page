@@ -14,18 +14,21 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .cta-btn {
   background: #ff4500;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 1.2rem;
+  text-decoration: none;
   cursor: pointer;
   margin: 10px 0;
   transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .cta-btn:hover {
@@ -40,11 +43,17 @@ header h1 {
 
 section {
   padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
   text-align: center;
   color: #007bff;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -59,11 +68,12 @@ li {
 
 .steps {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .step {
-  text-align: center;
+  width: 30%;
 }
 
 .circle {
@@ -75,6 +85,23 @@ li {
   color: white;
   line-height: 40px;
   font-size: 1.2rem;
+}
+
+.testimonials {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonial {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
 }
 
 footer {
@@ -91,4 +118,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
+  }
